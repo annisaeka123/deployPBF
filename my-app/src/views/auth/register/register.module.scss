@@ -1,0 +1,123 @@
+.register {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column; /* -- penting */
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  padding: 20px;
+
+  &__title {
+    width: 100%;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 40px;
+  }
+
+  &__form {
+    background: #393838;
+    width: 100%;
+    max-width: 420px;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 10px 25px rgba(155, 155, 155, 0.2);
+
+    &__item {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 20px;
+
+      &__label {
+        font-size: 14px;
+        font-weight: 600;
+        margin-bottom: 8px;
+        color: #fff;
+      }
+
+      &__input {
+        padding: 12px 14px;
+        border-radius: 10px;
+        border: 1px solid #ddd;
+        font-size: 14px;
+        transition: all 0.3s ease;
+        background-color: #dedddd;
+        color: #343232;
+
+        &:focus {
+          outline: none;
+          border-color: #d1d2d4;
+          box-shadow: 0 0 0 3px rgba(42, 82, 152, 0.2);
+        }
+      }
+    }
+
+    &__button {
+      width: 100%;
+      padding: 12px;
+      border-radius: 10px;
+      border: none;
+      background: #2a5298;
+      color: #ffffff;
+      font-weight: 600;
+      cursor: pointer;
+      transition: 0.3s ease;
+      margin-top: 10px;
+
+      &:hover {
+        background: #1e3c72;
+        transform: translateY(-2px);
+      }
+    }
+
+    &__text {
+      margin-top: 20px;
+      text-align: center;
+      font-size: 14px;
+      color: #000000 !important;
+
+      a {
+        color: #2a5298;
+        font-weight: 700;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+ }
+
+ &__error {
+    margin-top: 8px;
+    color: #ff4d4f;
+    font-size: 12px;
+  }
+
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .register {
+    &__form {
+      padding: 30px 20px;
+    }
+
+    &__title {
+      font-size: 26px;
+    }
+  }
+}

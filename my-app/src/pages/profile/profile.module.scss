@@ -1,0 +1,56 @@
+.profile {
+  width: 100%;
+  padding: 0 5%;
+  color: #fff;
+
+  &__title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    margin: 16px;
+  }
+
+  &__welcome {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 24px;
+    color: #ccc;
+  }
+
+  &__card {
+    width: 320px; // 🔼 lebih besar
+    margin: 0 auto;
+    padding: 32px; // 🔼 lebih lega
+    border-radius: 16px;
+    background-color: #1f1f1f;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__image {
+      margin-bottom: 20px;
+
+      img {
+        width: 140px; // 🔼 lebih besar
+        height: 140px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 3px solid #444;
+      }
+    }
+
+    &__name {
+      font-size: 20px; // 🔼 lebih besar
+      font-weight: 600;
+      margin-bottom: 8px;
+      text-align: center;
+    }
+
+    &__email {
+      font-size: 15px;
+      color: #aaa;
+      text-align: center;
+    }
+  }
+}
