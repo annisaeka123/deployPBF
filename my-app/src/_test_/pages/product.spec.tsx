@@ -3,7 +3,7 @@ import "@testing-library/jest-dom"
 import ProductPage from "@/pages/produk"
 
 // MOCK ROUTER
-jest.mock("next/navigation", () => ({
+jest.mock("next/router", () => ({
   useRouter() {
     return {
       route: "/produk",
@@ -14,14 +14,14 @@ jest.mock("next/navigation", () => ({
   },
 }))
 
-describe("Product Page", () => {
+describe("Daftar Produk", () => {
   
-  it("should render product page title", () => {
+  it("should render product page title", async () => {
     render(<ProductPage />)
 
-    const title = screen.getByTestId("title")
+    const title = await screen.findByTestId("title")
     expect(title).toBeInTheDocument()
-    expect(title.textContent).toBe("Product Page") // toBe()
+    expect(title.textContent).toBe("Daftar Produk") // toBe()
   })
 
   it("should match snapshot", () => {

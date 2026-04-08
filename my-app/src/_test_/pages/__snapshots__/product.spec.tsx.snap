@@ -1,39 +1,25 @@
 // Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
-exports[`Product Page should match snapshot 1`] = `
+exports[`Daftar Produk should match snapshot 1`] = `
 <DocumentFragment>
   <div>
-    <h1
-      data-testid="title"
-    >
-      Product Page
-    </h1>
     <div
       class="produk"
     >
       <h1
         class="produk__title"
+        data-testid="title"
       >
         Daftar Produk
       </h1>
       <div
         class="produk__content"
+        data-testid="product-list"
       >
         <div
-          class="produk__content__skeleton"
+          data-testid="skeleton"
         >
-          <div
-            class="produk__content__skeleton__image"
-          />
-          <div
-            class="produk__content__skeleton__name"
-          />
-          <div
-            class="produk__content__skeleton__category"
-          />
-          <div
-            class="produk__content__skeleton__price"
-          />
+          Loading...
         </div>
       </div>
     </div>
