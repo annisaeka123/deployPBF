@@ -1,7 +1,8 @@
 .profile {
   width: 100%;
   padding: 0 5%;
-  color: #fff;
+  min-height: 100vh;
+  margin-bottom: 3%;
 
   &__title {
     text-align: center;
@@ -18,9 +19,9 @@
   }
 
   &__card {
-    width: 320px; // 🔼 lebih besar
+    width: 400px; 
     margin: 0 auto;
-    padding: 32px; // 🔼 lebih lega
+    padding: 40px; 
     border-radius: 16px;
     background-color: #1f1f1f;
     box-shadow: 0 6px 14px rgba(0, 0, 0, 0.6);

@@ -9,10 +9,6 @@ const ProfilePage = () => {
     <div className={styles.profile}>
       <h1 className={styles.profile__title}>Halaman Profile</h1>
 
-      <h2 className={styles.profile__welcome}>
-        Selamat Datang {data?.user?.fullname}
-      </h2>
-
       <div className={styles.profile__card}>
         <div className={styles.profile__card__image}>
           <Image
