@@ -331,9 +331,17 @@ Coba akses:
 3. Konfigurasikan Google OAuth production  
 4. Lakukan minimal 1 redeploy  
 5. Dokumentasikan:  
-   - Screenshot dashboard Vercel  
-   - URL hasil deployment  
-   - Screenshot login Google berhasil  
+   - Screenshot dashboard Vercel
+
+     <img width="1919" height="977" alt="image" src="https://github.com/user-attachments/assets/095ce14c-7b4d-4877-ac45-b11de2db1236" />
+
+   - URL hasil deployment
+
+     https://deploy-pbf.vercel.app/ 
+     
+   - Screenshot login Google berhasil
+
+     <img width="959" height="481" alt="image" src="https://github.com/user-attachments/assets/cf0ebb53-621a-4b1f-892c-2cbc551fd036" />
 
 ---
 
