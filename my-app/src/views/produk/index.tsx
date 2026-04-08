@@ -14,21 +14,29 @@ type ProductType = {
 const TampilanProduk = ({ products }: { products: ProductType[] }) => {
   return (
     <div className={styles.produk}>
-      <h1 className={styles.produk__title}>Daftar Produk</h1>
-      <div className={styles.produk__content}>
+      <h1 data-testid="title" className={styles.produk__title}>
+        Daftar Produk
+      </h1>
+      <div data-testid="product-list" className={styles.produk__content}>
         {products?.length > 0 ? (
           <>
             {products?.map((products: ProductType) => (
-              <Link href={`/produk/${products.id}`} key={products.id}>
+              <Link
+                href={`/produk/${products.id}`}
+                key={products.id}
+                className={styles.produk__content__item}
+                data-testid="product-item"
+              >
                 <div className={styles.produk__content__item__image}>
-                  <Image src={products.image} alt={products.name} width={200} height={200} priority />
+                  <Image
+                    src={products.image}
+                    alt={products.name}
+                    width={200}
+                    height={200}
+                  />
                 </div>
-                <h4 className={styles.produk__content__item__name}>
-                  {products.name}
-                </h4>
-                <p className={styles.produk__content__item__category}>
-                  {products.category}
-                </p>
+                <h4>{products.name}</h4>
+                <p>{products.category}</p>
                 <p className={styles.produk__content__item__size}>
                   Size: {products.size}
                 </p>
@@ -44,11 +52,8 @@ const TampilanProduk = ({ products }: { products: ProductType[] }) => {
             ))}
           </>
         ) : (
-          <div className={styles.produk__content__skeleton}>
-            <div className={styles.produk__content__skeleton__image}></div>
-            <div className={styles.produk__content__skeleton__name}></div>
-            <div className={styles.produk__content__skeleton__category}></div>
-            <div className={styles.produk__content__skeleton__price}></div>
+          <div data-testid="skeleton">
+            Loading...
           </div>
         )}
       </div>

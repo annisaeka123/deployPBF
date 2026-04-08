@@ -2,7 +2,7 @@ import { useEffect, useState } from "react"
 // import TampilanProduk from "../../views/produk"
 import useSWR from "swr"
 import fetcher from "../../utils/swr/fetcher"
-import { useRouter } from "next/navigation"
+import { useRouter } from "next/router"
 import dynamic from "next/dynamic"
 
 const TampilanProduk = dynamic(() => import("../../views/produk"), {
@@ -18,7 +18,6 @@ const kategori = () => {
 
   return (
     <div>
-      <h1 data-testid="title">Product Page</h1>
       <TampilanProduk products={isLoading ? [] : data?.data} />
     </div>
   )

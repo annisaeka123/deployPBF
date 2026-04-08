@@ -15,6 +15,9 @@ const DetailProduk = ({ products }: { products: ProductType }) => {
             <div className={styles.produkdetail__info}>
                 <h1 className={styles.produkdetail__name}>{products.name}</h1>
                 <p className={styles.produkdetail__category}>{products.category}</p>
+                <p className={styles.produk__content__item__size}>
+                  Size: {products.size}
+                </p>
                 <p className={styles.produkdetail__price}>
                 {/* Rp {products.price.toLocaleString("id-ID")} */}
                 Rp {products.price && products.price.toLocaleString("id-ID")}
